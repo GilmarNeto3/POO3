@@ -1,0 +1,159 @@
+/* ===== ESTILOS GERAIS ===== */
+body {
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #16213e;
+  border-bottom: 2px solid #e94560;
+}
+.navbar-brand {
+  color: #e94560 !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.nav-link {
+  color: #ccc !important;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #e94560 !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card:hover {
+  border-color: #e94560;
+}
+.card-header {
+  background-color: #0f3460;
+  color: #e94560;
+  font-weight: bold;
+}
+.card-title {
+  color: #e94560;
+  font-weight: bold;
+}
+.card-text {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.card .bi {
+  font-size: 2.5rem;
+  color: #e94560;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.form-label {
+  color: #ccc;
+}
+.form-control,
+.form-select {
+  background-color: #1a1a2e;
+  color: #fff;
+  border: 1px solid #0f3460;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: #1a1a2e;
+  color: #fff;
+  border-color: #e94560;
+  box-shadow: none;
+}
+.form-select option {
+  background-color: #1a1a2e;
+}
+
+/* ===== BOTÕES ===== */
+.btn-custom {
+  background-color: #e94560;
+  color: #fff;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #c73652;
+  color: #fff;
+}
+.btn-outline-danger {
+  border-color: #e94560;
+  color: #e94560;
+}
+.btn-outline-danger:hover {
+  background-color: #e94560;
+  color: #fff;
+}
+
+/* ===== TABELAS ===== */
+.table {
+  color: #ccc;
+}
+.table thead {
+  color: #e94560;
+}
+.table-dark {
+  background-color: #16213e;
+}
+
+/* ===== ALERTAS ===== */
+.alert-success {
+  background-color: #0f3460;
+  color: #4ade80;
+  border: 1px solid #4ade80;
+}
+.alert-warning {
+  background-color: #3a2a00;
+  color: #facc15;
+  border: 1px solid #facc15;
+}
+
+/* ===== HERO (página inicial) ===== */
+.hero {
+  background: linear-gradient(135deg, #16213e, #0f3460);
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e94560;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e94560;
+}
+.hero p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+/* ===== SESSÕES (sessoes.html) ===== */
+.info-label {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+.info-value {
+  color: #fff;
+  font-weight: 500;
+}
+.preco {
+  color: #4ade80;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.badge-custom {
+  background-color: #e94560;
+  color: #fff;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #16213e;
+  color: #666;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 1px solid #0f3460;
+}

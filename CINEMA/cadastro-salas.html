@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Salas - CineSystem</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-camera-reels"></i> CineSystem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro-filmes.html"><i class="bi bi-film"></i> Filmes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cadastro-salas.html"><i class="bi bi-building"></i> Salas</a></li>
+          <li class="nav-item"><a class="nav-link" href="cadastro-sessoes.html"><i class="bi bi-calendar3"></i> Sessões</a></li>
+          <li class="nav-item"><a class="nav-link" href="venda-ingressos.html"><i class="bi bi-ticket-perforated"></i> Ingressos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sessoes.html"><i class="bi bi-list-ul"></i> Programação</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h3 class="mb-4" style="color:#e94560;"><i class="bi bi-building"></i> Cadastro de Salas</h3>
+
+    <!-- Mensagem de sucesso -->
+    <div id="msgSucesso" class="alert alert-success d-none">
+      <i class="bi bi-check-circle"></i> Sala salva com sucesso!
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-plus-circle"></i> Nova Sala</div>
+      <div class="card-body">
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <label class="form-label">Nome da Sala</label>
+            <input type="text" id="nome" class="form-control" placeholder="Ex: Sala 1" />
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Capacidade</label>
+            <input type="number" id="capacidade" class="form-control" placeholder="Ex: 100" min="1" />
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Tipo</label>
+            <select id="tipo" class="form-select">
+              <option value="">Selecione...</option>
+              <option>2D</option>
+              <option>3D</option>
+              <option>IMAX</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-custom" onclick="salvarSala()">
+              <i class="bi bi-floppy"></i> Salvar Sala
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TABELA DE SALAS -->
+    <div class="card">
+      <div class="card-header"><i class="bi bi-list-ul"></i> Salas Cadastradas</div>
+      <div class="card-body p-0">
+        <table class="table table-dark table-striped mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Capacidade</th>
+              <th>Tipo</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaSalas">
+            <tr>
+              <td colspan="5" class="text-center text-secondary">Nenhuma sala cadastrada ainda.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer><p class="mb-0">CineSystem &copy; 2025</p></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
