@@ -4,22 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CineSystem - Controle de Cinema</title>
-
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-  <!-- Nosso CSS próprio -->
-  <link href="css/estilo.css" rel="stylesheet"/>
+  <link href="../css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ══════════ NAVBAR ══════════ -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <i class="bi bi-camera-reels"></i> CineSystem
-      </a>
+      <a class="navbar-brand" href="index.html"><i class="bi bi-camera-reels"></i> CineSystem</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,84 +29,67 @@
     </div>
   </nav>
 
-  <!-- ══════════ HERO ══════════ -->
   <div class="hero">
     <i class="bi bi-camera-reels" style="font-size: 3rem; color: #e94560;"></i>
     <h1>CineSystem</h1>
     <p>Sistema de Controle de Cinema — Gerencie filmes, salas, sessões e ingressos.</p>
   </div>
 
-  <!-- ══════════ CARDS DE NAVEGAÇÃO ══════════ -->
   <div class="container mt-5">
     <h4 class="mb-4 text-center" style="color: #aaa;">O que deseja fazer?</h4>
     <div class="row g-4 justify-content-center">
 
-      <!-- Filmes -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100 text-center p-3">
           <div class="card-body">
             <i class="bi bi-film"></i>
             <h5 class="card-title mt-2">Cadastro de Filmes</h5>
             <p class="card-text">Adicione novos filmes ao sistema com título, gênero, duração e classificação.</p>
-            <a href="cadastro-filmes.html" class="btn btn-custom mt-2">
-              <i class="bi bi-plus-circle"></i> Acessar
-            </a>
+            <a href="cadastro-filmes.html" class="btn btn-custom mt-2"><i class="bi bi-plus-circle"></i> Acessar</a>
           </div>
         </div>
       </div>
 
-      <!-- Salas -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100 text-center p-3">
           <div class="card-body">
             <i class="bi bi-building"></i>
             <h5 class="card-title mt-2">Cadastro de Salas</h5>
             <p class="card-text">Cadastre as salas do cinema com capacidade e tipo (2D, 3D, IMAX).</p>
-            <a href="cadastro-salas.html" class="btn btn-custom mt-2">
-              <i class="bi bi-plus-circle"></i> Acessar
-            </a>
+            <a href="cadastro-salas.html" class="btn btn-custom mt-2"><i class="bi bi-plus-circle"></i> Acessar</a>
           </div>
         </div>
       </div>
 
-      <!-- Sessões -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100 text-center p-3">
           <div class="card-body">
             <i class="bi bi-calendar3"></i>
             <h5 class="card-title mt-2">Cadastro de Sessões</h5>
             <p class="card-text">Crie sessões vinculando filmes e salas com data, hora e preço.</p>
-            <a href="cadastro-sessoes.html" class="btn btn-custom mt-2">
-              <i class="bi bi-plus-circle"></i> Acessar
-            </a>
+            <a href="cadastro-sessoes.html" class="btn btn-custom mt-2"><i class="bi bi-plus-circle"></i> Acessar</a>
           </div>
         </div>
       </div>
 
-      <!-- Ingressos -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100 text-center p-3">
           <div class="card-body">
             <i class="bi bi-ticket-perforated"></i>
             <h5 class="card-title mt-2">Venda de Ingressos</h5>
             <p class="card-text">Registre a venda de ingressos para os clientes com assento e pagamento.</p>
-            <a href="venda-ingressos.html" class="btn btn-custom mt-2">
-              <i class="bi bi-cart"></i> Acessar
-            </a>
+            <a href="venda-ingressos.html" class="btn btn-custom mt-2"><i class="bi bi-cart"></i> Acessar</a>
           </div>
         </div>
       </div>
 
-      <!-- Programação -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100 text-center p-3">
           <div class="card-body">
             <i class="bi bi-list-ul"></i>
             <h5 class="card-title mt-2">Programação</h5>
             <p class="card-text">Veja todas as sessões disponíveis e compre ingressos diretamente.</p>
-            <a href="sessoes.html" class="btn btn-custom mt-2">
-              <i class="bi bi-eye"></i> Acessar
-            </a>
+            <a href="sessoes.html" class="btn btn-custom mt-2"><i class="bi bi-eye"></i> Acessar</a>
           </div>
         </div>
       </div>
@@ -121,12 +97,8 @@
     </div>
   </div>
 
-  <!-- ══════════ RODAPÉ ══════════ -->
-  <footer>
-    <p class="mb-0">CineSystem &copy; 2025 — Trabalho de Desenvolvimento Web</p>
-  </footer>
+  <footer><p class="mb-0">CineSystem &copy; 2025 — Trabalho de Desenvolvimento Web</p></footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

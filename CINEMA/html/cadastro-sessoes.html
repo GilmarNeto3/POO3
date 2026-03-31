@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cadastro de Sessões - CineSystem</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
-  <link href="css/estilo.css" rel="stylesheet"/>
+  <link href="../css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html"><i class="bi bi-camera-reels"></i> CineSystem</a>
@@ -34,7 +32,6 @@
   <div class="container mt-4">
     <h3 class="mb-4" style="color:#e94560;"><i class="bi bi-calendar3"></i> Cadastro de Sessões</h3>
 
-    <!-- Mensagens -->
     <div id="msgSucesso" class="alert alert-success d-none">
       <i class="bi bi-check-circle"></i> Sessão salva com sucesso!
     </div>
@@ -42,7 +39,6 @@
       <i class="bi bi-exclamation-triangle"></i> Cadastre filmes e salas antes de criar uma sessão.
     </div>
 
-    <!-- FORMULÁRIO -->
     <div class="card mb-4">
       <div class="card-header"><i class="bi bi-plus-circle"></i> Nova Sessão</div>
       <div class="card-body">
@@ -50,7 +46,6 @@
 
           <div class="col-md-6">
             <label class="form-label">Filme</label>
-            <!-- As opções são preenchidas pelo JavaScript (cadastro-sessoes.js) -->
             <select id="filmeId" class="form-select">
               <option value="">Selecione um filme...</option>
             </select>
@@ -58,7 +53,6 @@
 
           <div class="col-md-6">
             <label class="form-label">Sala</label>
-            <!-- As opções são preenchidas pelo JavaScript (cadastro-sessoes.js) -->
             <select id="salaId" class="form-select">
               <option value="">Selecione uma sala...</option>
             </select>
@@ -102,37 +96,26 @@
       </div>
     </div>
 
-    <!-- TABELA DE SESSÕES -->
     <div class="card">
       <div class="card-header"><i class="bi bi-list-ul"></i> Sessões Cadastradas</div>
       <div class="card-body p-0">
         <table class="table table-dark table-striped mb-0">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Filme</th>
-              <th>Sala</th>
-              <th>Data e Hora</th>
-              <th>Preço</th>
-              <th>Idioma</th>
-              <th>Formato</th>
-              <th>Ação</th>
+              <th>#</th><th>Filme</th><th>Sala</th><th>Data e Hora</th><th>Preço</th><th>Idioma</th><th>Formato</th><th>Ação</th>
             </tr>
           </thead>
           <tbody id="tabelaSessoes">
-            <tr>
-              <td colspan="8" class="text-center text-secondary">Nenhuma sessão cadastrada ainda.</td>
-            </tr>
+            <tr><td colspan="8" class="text-center text-secondary">Nenhuma sessão cadastrada ainda.</td></tr>
           </tbody>
         </table>
       </div>
     </div>
-
   </div>
 
   <footer><p class="mb-0">CineSystem &copy; 2025</p></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
